@@ -1,0 +1,439 @@
+@keyframes bounceAnim{
+    0%, 10% { bottom: 50%; }
+
+    100% { bottom: 0%; }
+}
+@keyframes spinAnim{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: -2.5vh;
+    }
+    100% {
+        margin-top: -5vh;
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        margin-top: -5vh;
+    }
+    50% {
+        margin-top: -2.5vh;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+html, body {
+    padding: 0!important;
+    margin: 0!important;
+    background: #100e17;
+    color: #ffffff;
+    scroll-behavior: smooth;
+    /*font-family: 'Roboto', sans-serif!important;*/
+    font-family: 'Comfortaa', cursive!important;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.h3-title {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+}
+
+img.img-Competances {
+    height: 480px;
+    border-radius: 1vh;
+}
+
+img {
+    width: 100%;
+    border-radius: 1vh;
+}
+
+li.nav-item {
+    margin-left: 5vh;
+}
+
+a.nav-item.nav-link {
+    margin-left: 5vh;
+}
+
+.bounce{
+    background: #FFF;
+    color: #000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+    border-radius: 0.5vh;
+    text-align: center;
+    margin-bottom: 15vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    animation: bounceAnim 1s cubic-bezier(.63,.09,.75,.46) infinite alternate,
+    spinAnim 3s linear infinite;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 138, 0, 1), rgba(218, 27, 96, 1));
+}
+
+
+/* SECTION */
+
+#competences {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+
+    padding: 5vh;
+
+    background: linear-gradient(30deg, orange, purple);
+    background-image: linear-gradient(360deg,#ff8a00,#da1b60);
+    border-radius: 1vh;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+
+    height: 80vh;
+}
+
+/*@media only screen and (max-width:800px) {*/
+/*    #competences {*/
+/*        height: 110vh;*/
+/*    }*/
+/*}*/
+
+#experiences {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+}
+
+#stage {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#portfolio {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+}
+
+#veille {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+
+    padding: 5vh;
+
+    background-image: linear-gradient(360deg,#ff8a00,#da1b60);
+    border-radius: 1vh;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+
+    height: auto;
+}
+
+/*.dome {*/
+/*    margin: 5vh -10% 0px;*/
+/*    border-top-left-radius: 100%;*/
+/*    border-top-right-radius: 100%;*/
+/*    padding-bottom: 10vh;*/
+/*    text-align: center;*/
+/*    padding-top: 10vh;*/
+
+/*    height: 25%;*/
+
+/*    background-image: url('../img/maps.png');*/
+
+/*    background-attachment: fixed;*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+
+.dome {
+    text-align: center;
+    padding: 30vh;
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+    ),
+    url(../img/maps.png);
+    background: linear-gradient(#100e17, rgba(16, 14, 23, 0.5) ), url(../img/maps.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact {
+    /*background: rgba(255, 255, 255, 0.5);*/
+    background-image: linear-gradient(rgba(255, 138, 0, 0.6), rgba(218, 27, 96, 0.6));
+    width: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5vh;
+    color: #FFF;
+    border-radius: 1vh;
+}
+
+/*.gradientbg {*/
+/*    background:*/
+/*            linear-gradient(*/
+/*                    rgba(255, 138, 0, 0.45),*/
+/*                    rgba(218, 27, 96, 0.45)*/
+/*            ),*/
+/*            url('../img/maps.png');*/
+/*    background-size:cover;*/
+/*    text-align:center;*/
+/*}*/
+
+.my-container {
+    overflow: hidden;
+}
+
+.download {
+    background: #001628;
+    color: #ffffff;
+    padding: 2vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10vh;
+    border-radius: 1vh;
+}
+
+.download:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Styles, not important */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/*.download:hover {*/
+/*    box-shadow: 0 5px 15px rgba(0,0,0,0.3);*/
+/*    transition: opacity 0.3s ease-in-out;    text-decoration: none;*/
+/*    color: #FFF;*/
+/*}*/
+
+.moveUpSlow {
+    margin-top: 0;
+    transition: margin-top 0.3s ease-in-out;
+}
+
+.moveUpSlow:hover {
+    margin-top: -5vh;
+}
+
+
+
+.make-it-slow {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Transition to a bigger shadow on hover */
+.make-it-slow:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* The fast way */
+.make-it-fast {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+/* Pre-render the bigger shadow, but hide it */
+.make-it-fast::after {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Transition to showing the bigger shadow on hover */
+.make-it-fast:hover::after {
+    opacity: 1;
+}
+
+/* CARD */
+.my-card {
+    background: #FFF;
+    color: #000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+    border-radius: 1vh;
+    text-align: center;
+    margin-bottom: 15vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 2vh;
+    padding-right: 2vh
+}
+
+.my-card:hover {
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 1);
+    /*margin-top: -5vh;*/
+    /*transition: 0.3s;*/
+    /*animation-name: moveUp;*/
+}
+
+/*.dome:hover {*/
+/*    box-shadow: 0 20px 30px rgba(0, 0, 0, 1);*/
+/*    padding-top: 15vh;*/
+/*    transition: 0.3s;*/
+/*    animation-name: moveUp;*/
+/*}*/
+
+.my-card-circle {
+    /*background: linear-gradient(30deg, orange, purple);*/
+    background-image: linear-gradient(360deg,#ff8a00,#da1b60);
+    border-radius: 70%;
+    width: 10vh;
+    height: 10vh;
+    color: #FFF;
+    line-height: 10vh;
+    font-size: 1.5em;
+    box-shadow: 0 0px 30px rgba(0,0,0,0.5);
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: -10vh;
+}
+
+.my-card-github {
+    background: #FFF;
+    color: #000;
+    border-radius: 1vh;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    width: 35vh;
+    height: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+}
+
+.my-card-github:hover {
+    text-decoration: none;
+    box-shadow: 0 30px 40px rgba(0,0,0,0.5);
+}
+
+.row-card-circle {
+    margin-top: -41vh;
+    margin-bottom: 41vh;
+}
+
+.row-my-card {
+    margin-top: 10vh;
+}
+
+.scroll {
+    margin-bottom: 15vh;
+}
+
+.my-shadow {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* NAV */
+
+nav.navbar.navbar-expand-sm.flex-nowrap.sticky-top {
+    box-shadow: 0 -5px 15px 5px #000;
+    /*background: linear-gradient(30deg, orange, purple);*/
+    background-image: linear-gradient(to left,#ff8a00,#da1b60);
+}
+
+a.nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+a.nav-link:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+a.nav-link:focus {
+    color: rgba(255, 255, 255, 1);
+}
+
+i.material-icons.md-48 {
+    font-size: 4em;
+    color: #FFF;
+}
+
+.carousel-item {
+    margin-top: 10vh;
+}
+
+.row-carousel {
+    max-width: 95vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
+    text-align: justify;
+}
+
+.carousel-inner {
+    text-align: justify;
+}
+
+.carousel-inner {
+    text-align: justify!important;
+}
+
+div#carouselExampleIndicators {
+    /*height: 60vh;*/
+}
+
+ol.carousel-indicators {
+    top: 4vh;
+}
+
+a.carousel-control-next {
+    top: -20vh;
+    right: -6vh
+}
+
+a.carousel-control-prev {
+    top: -20vh;
+    left: -6vh
+}
+.col-md-4 {
+    text-align: justify;
+}
+
+#img-github {
+    width: 7vh;
+}
+
+.title {
+    text-align: center;
+}
+
+.title-colored {
+    text-align: center;
+    background-image: linear-gradient(to left, rgba(255, 138, 0, 1), rgba(218, 27, 96, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
